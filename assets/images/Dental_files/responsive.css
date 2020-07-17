@@ -1,0 +1,916 @@
+/* 
+====================================================
+              Responsive css for 1341px t0 1600px
+====================================================
+*/
+
+@media only screen and (min-width:1041px) and (max-width:1600px) {
+    .mid-container {
+        padding: 0 20px;
+    }
+    .tab-menu-wrapper .nav-item a.nav-link {
+        padding: 6px;
+    }
+    .css2-wt-wrapper .css2-wt-wrapper-content {
+        width: 64%;
+    }
+    .css2-wt-wrapper .stick {
+        width: 330px;
+        right: 35px;
+    }
+}
+
+
+/* 
+====================================================
+              Responsive css for 1025px t0 1480px
+====================================================
+*/
+
+@media only screen and (min-width:1025px) and (max-width:1340px) {
+    .mid-container {
+        padding: 0 10px;
+    }
+    .tab-menu-wrapper .nav-item a.nav-link {
+        padding: 6px;
+    }
+    .css2-wt-wrapper .css2-wt-wrapper-content {
+        width: 64%;
+    }
+    .css2-wt-wrapper .stick {
+        width: 330px;
+        right: 35px;
+    }
+}
+
+
+/* 
+====================================================
+              Responsive css for 1099px
+====================================================
+*/
+
+@media only screen and (max-width:1099px) {
+    /* home page */
+    header.main-header .navbar {
+        padding: 14px 0;
+    }
+    .mid-container {
+        padding: 0px;
+    }
+    header.main-header a.navbar-brand img {
+        width: 115px;
+    }
+    section.home-section1 {
+        height: 75vh;
+    }
+    h1.h1-tittle {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    h5.h5-tittle {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    section.home-section2 .hs2-wrapper-head a {
+        margin-left: 30px;
+    }
+    h6.h6-tittle {
+        font-size: 14px;
+    }
+    /* for category page */
+    .cs1-wrapper-4 .card-box .content-box h6 {
+        font-size: 16px;
+    }
+    .cs1-wrapper-4 .card-box .content-box p {
+        font-size: 12px;
+    }
+    .cs1-wrapper-2 .card-box .content-box {
+        padding: 10px 20px;
+    }
+    .read-more-btn {
+        padding: 4px 20px;
+    }
+    .cs2-wrapper .img-box {
+        padding: 0;
+    }
+    .cs2-wrapper .price-box {
+        margin-left: 16px;
+    }
+    .cs1-wrapper-5 .card-box2 .content-box p {
+        font-size: 12px;
+    }
+    .cs2-wrapper .content-box p {
+        margin-bottom: 4px;
+        font-size: 12px;
+    }
+    .cs2-wrapper .content-box .bs-box {
+        font-size: 14px;
+    }
+    .cs2-wrapper .content-box {
+        padding: 5px 0 0;
+    }
+    /* for courses page */
+    .tab-menu-wrapper .nav-item a.nav-link {
+        font-size: 14px;
+        margin-right: 25px;
+        margin-left: 25px;
+        padding: 8px;
+    }
+    .css2-wt-wrapper .css2-wt-wrapper-content {
+        width: 85%;
+    }
+    .css2-wt-wrapper .stick {
+        width: 330px;
+        right: 15px;
+    }
+    #announcement .pf-content-box {
+        padding-top: 12px;
+    }
+    #review .pf-content-box {
+        padding-top: 12px;
+    }
+    #review .st-rating-box {
+        margin-top: 15px;
+    }
+    /* for buyed courses page */
+    button.start-learning-btn {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+    .h2-tittle {
+        font-size: 30px;
+    }
+    /* for courses-video page */
+    .courses-video-section1 {
+        padding: 30px 0;
+    }
+    .courses-video-section1 .content-box {
+        margin-top: 0;
+    }
+    .courses-video-section1 .content-box p {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+    /* for profile page */
+    .profile-body .p-right-wrapper .tab-pane .app-now-btn {
+        width: 25%;
+    }
+    .profile-body .p-right-wrapper .tab-pane .photo-p-body {
+        width: 70%;
+    }
+    /* for footer pages */
+    .privacy-policy-section .pps-head-wrapper h4::before,
+    .privacy-policy-section .pps-head-wrapper h4::after {
+        width: 380px;
+    }
+    section.faq-section h4::before,
+    section.faq-section h4::after {
+        width: 220px;
+    }
+    /* for course bundles page */
+    section.course-bundles-section .cb-body-wrapper .tab_menu {
+        width: 25%;
+    }
+    /* for course view page */
+    .l_filter_box {
+        right: 10px;
+    }
+    .course-view-section .item.list-group-item .img-event {
+        width: 30%;
+    }
+    .course-view-section .item.list-group-item .caption {
+        width: 50%;
+        padding: 10px 20px;
+    }
+    .course-view-section .item.list-group-item .card-footer {
+        padding: 27px 25px;
+    }
+    /* for become an instructor page */
+    .bai-section .bai-profile-body .img-box2 {
+        width: 210px;
+        height: 210px;
+    }
+    /* for blogs pages */
+    .bs2-left-wrapper .blogs-slider .blog-slide1 .content-box {
+        padding: 70px 60px;
+    }
+    .bs2-left-wrapper .blogs-box .img-box {
+        width: 35%;
+    }
+    .bs2-left-wrapper .blogs-box .content-box {
+        width: 65%;
+    }
+    /* for checkout page */
+    section.checkout-section2 .csk2-left-wrapper table.product-cart-table tbody tr.pcart-tr td .img-box {
+        width: 30%;
+    }
+    section.checkout-section2 .csk2-left-wrapper table.product-cart-table tbody tr.pcart-tr td .content-box {
+        width: 55%;
+        margin-top: 10px;
+    }
+    section.checkout-section2 .csk2-left-wrapper table.product-cart-table tbody tr.pcart-tr td {
+        vertical-align: middle;
+    }
+    button.cancel-btn {
+        right: -12px;
+        top: -10px;
+    }
+    section.checkout-section2 .csk2-right-wrapper .form-group input {
+        padding: 8px 10px;
+    }
+    section.checkout-section2 .csk2-right-wrapper .form-group .apply-btn {
+        padding: 4px 12px;
+        margin-left: -22px;
+    }
+}
+
+
+/* 
+====================================================
+              Responsive css for 769px
+====================================================
+*/
+
+@media only screen and (max-width:769px) {
+    /* home page */
+    .mid-container {
+        padding: 0px;
+    }
+    .navbar-toggler-icon {
+        display: block;
+        width: 1.5em;
+        height: 3px;
+        background-color: #003D7E;
+        margin: 6px 0;
+    }
+    header.main-header a.navbar-brand img {
+        width: 140px;
+    }
+    .login-btn {
+        width: 15%;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .signup-btn {
+        width: 15%;
+        margin-left: 16px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    section.home-section1 {
+        height: 45vh;
+    }
+    h3.h3-tittle {
+        font-size: 26px;
+    }
+    p.para-desc {
+        font-size: 13px;
+    }
+    .slick-next,
+    .slick-prev {
+        top: -69px;
+    }
+    section.home-section2 .hs2-wrapper-head a {
+        margin-left: -98px;
+    }
+    section.home-section6 .hs6-form-wrapper {
+        padding: 60px 20px 10px;
+    }
+    h4.h4-tittle {
+        font-size: 17px;
+    }
+    section.home-section6 .hs6-form-wrapper .free-tag-box {
+        right: 20px;
+    }
+    .page-footer p {
+        font-size: 10px;
+    }
+    .page-footer h6 a {
+        margin-right: 5px;
+    }
+    .page-footer h6 a img {
+        width: 20px;
+    }
+    /* for category page */
+    section.category-section1 {
+        padding: 30px 0;
+    }
+    .cs1-wrapper-2 {
+        padding: 20px 0 0;
+    }
+    .cs1-wrapper-2 .slick-prev,
+    .cs1-wrapper-2 .slick-next {
+        top: -40px;
+    }
+    /* for courses page */
+    .tab-menu-wrapper .nav-item a.nav-link {
+        font-size: 12px;
+        margin-right: 15px;
+        margin-left: 15px;
+        padding: 6px;
+    }
+    .tab-menu-wrapper .nav-item a.nav-link.active::before {
+        left: -10px;
+    }
+    .tab-menu-wrapper .nav-item a.nav-link.active::after {
+        right: -12px;
+    }
+    .h2-tittle {
+        font-size: 28px;
+    }
+    .courses-section2 .tab-content p {
+        font-size: 11px;
+    }
+    .courses-section2 .tab-content li {
+        font-size: 11px;
+    }
+    .css2-wt-wrapper .css2-wt-wrapper-content {
+        width: 95%;
+        margin-top: -270px;
+    }
+    button.buy-now-btn {
+        margin-left: 12px;
+        padding: 2px 15px;
+    }
+    .css2-wt-wrapper .stick {
+        width: 276px;
+    }
+    #review .stars i.fas {
+        font-size: 11px;
+    }
+    #review p {
+        font-size: 12px;
+    }
+    /* for buyed courses page */
+    button.start-learning-btn {
+        top: 25px;
+        width: 150px;
+    }
+    /* for courses video preview page */
+    .cvp-left-wrapper {
+        width: 40%;
+    }
+    .cvp-right-wrapper {
+        width: 60%;
+    }
+    .cvp-right-wrapper .body-wrapper {
+        padding: 20px;
+    }
+    /* for profile page */
+    .profile-body .p-right-wrapper {
+        padding: 40px 15px 40px 0px;
+    }
+    .profile-body .p-right-wrapper .tab-pane .app-now-btn {
+        width: 30%;
+    }
+    /* for public profile page */
+    .public-profile-section2 .cs1-wrapper-2 .card-box {
+        margin-bottom: 30px;
+    }
+    /* for footer pages */
+    .privacy-policy-section .pps-head-wrapper h4::before,
+    .privacy-policy-section .pps-head-wrapper h4::after {
+        width: 275px;
+    }
+    section.faq-section h4::before,
+    section.faq-section h4::after {
+        width: 160px;
+    }
+    /* for course bundles page */
+    section.course-bundles-section .cb-body-wrapper .tab_menu {
+        width: 34%;
+    }
+    section.course-bundles-section .cb-body-wrapper .tab_content .course-plan-box p.para-desc {
+        font-size: 11px;
+    }
+    section.course-bundles-section .cb-body-wrapper .tab_content .course-plan-box p span {
+        font-size: 14px;
+    }
+    section.course-bundles-section .cb-body-wrapper .tab_content .course-plan-box .recommended-box {
+        top: -36px;
+    }
+    /* for course view page */
+    .l_filter_box {
+        right: 28px;
+        top: 117px;
+    }
+    .l_filter_box .accordion .card .card-header {
+        padding: 5px 0px;
+    }
+    .l_filter_box .accordion .card .card-header h5 {
+        font-size: 14px;
+    }
+    .l_filter_box .accordion .card .card-body {
+        padding: 6px 0;
+    }
+    .l_filter_box .accordion .card .card-body label {
+        font-size: 11px;
+    }
+    .course-view-section .item.list-group-item .card-footer {
+        padding: 10px 10px;
+    }
+    .course-view-section .card-body h4 {
+        font-size: 12px;
+    }
+    .course-view-section .card-body .bs-box {
+        width: 70px;
+        font-size: 10px;
+        margin: 0px 0 5px;
+    }
+    /* for company profile page */
+    .comp-profile-section4 .global-reach-box .inner-box {
+        width: 24%;
+    }
+    .comp-profile-section4 .global-reach-box .inner-box:nth-child(7) {
+        width: 50%;
+    }
+    /* for blogs pages */
+    .bs2-left-wrapper .blogs-slider .blog-slide1 .content-box p {
+        font-size: 12px;
+    }
+    .bs2-left-wrapper .blogs-slider .blog-slide1 .content-box {
+        padding: 20px 15px;
+    }
+    .bs2-left-wrapper .blogs-box .img-box {
+        width: 40%;
+    }
+    .bs2-left-wrapper .blogs-box .content-box {
+        width: 60%;
+        padding: 8px 10px;
+    }
+    .bs2-left-wrapper .blogs-box .content-box p.para-desc {
+        font-size: 11px;
+    }
+    /* for checkout page */
+    section.checkout-section2 .csk2-left-wrapper table.product-cart-table tbody tr.pcart-tr td .img-box {
+        width: 40%;
+    }
+    section.checkout-section2 .csk2-left-wrapper table.product-cart-table tbody tr.pcart-tr td .content-box {
+        width: 53%;
+        margin-top: 2px;
+        margin-left: 15px;
+    }
+    section.checkout-section2 .csk2-left-wrapper table.product-cart-table tbody tr.pcart-tr td h6 {
+        font-size: 12px;
+    }
+    /* for payment page */
+    .order-detail-box .mt-3 {
+        margin-top: 10px !important;
+    }
+    .order-detail-box .mt-2 {
+        margin-top: 0px !important;
+    }
+}
+
+
+/* 
+====================================================
+              Responsive css for 481px
+====================================================
+*/
+
+@media only screen and (max-width: 481px) {
+    /* home page */
+    header.main-header .navbar {
+        padding: 8px 0;
+    }
+    h1.h1-tittle {
+        font-size: 28px;
+        line-height: 30px;
+    }
+    .login-btn,
+    .signup-btn {
+        width: 40%;
+    }
+    section.home-section2 .hs2-wrapper-head a {
+        margin-left: 45px;
+        position: relative;
+        top: 5px;
+    }
+    .slick-next,
+    .slick-prev {
+        top: -40px;
+    }
+    section.home-section2 {
+        padding: 20px 0;
+    }
+    .h2-tittle {
+        font-size: 25px;
+    }
+    .home-section4 {
+        padding: 20px 0 10px;
+    }
+    section.home-section5 {
+        padding: 20px 0;
+    }
+    section.home-section5 .hs5-content-wrapper {
+        display: block;
+        margin-bottom: 30px;
+    }
+    section.home-section5 .hs5-img-wrapper3,
+    section.home-section5 .hs5-content-wrapper2 {
+        display: block;
+    }
+    section.home-section5 .hs5-img-wrapper2,
+    section.home-section5 .hs5-content-wrapper3 {
+        display: none;
+    }
+    .pt-5,
+    .py-5 {
+        padding-top: 0rem!important;
+    }
+    .pl-5,
+    .px-5 {
+        padding-left: 15px!important;
+    }
+    section.home-section7 {
+        padding-top: 25px;
+    }
+    section.home-section8 {
+        padding: 0px 0 25px;
+    }
+    .home-section9 .text-right {
+        text-align: left!important;
+        margin-top: 25px;
+    }
+    .page-footer img {
+        width: 38%;
+    }
+    .page-footer p {
+        font-size: 14px;
+    }
+    .page-footer .h5-tittle {
+        font-size: 16px;
+    }
+    .page-footer li.support-item a {
+        font-size: 13px;
+    }
+    /* for category page */
+    section.category-section1 {
+        padding: 20px 0;
+    }
+    h3.h3-tittle {
+        font-size: 18px;
+    }
+    .cs1-wrapper-1 {
+        padding: 10px 20px;
+    }
+    .cs1-wrapper-1 .dp-toggle-bars {
+        margin-top: 0;
+    }
+    .cs1-wrapper-1 .dp-toggle-bars .t-bar1 {
+        height: 3px;
+        margin-top: 4px;
+    }
+    .cs1-wrapper-1 .dp-toggle-bars .t-bar2,
+    .cs1-wrapper-1 .dp-toggle-bars .t-bar3,
+    .cs1-wrapper-1 .dp-toggle-bars .t-bar4 {
+        height: 3px;
+    }
+    .cs1-wrapper-2 {
+        padding: 30px 0 0;
+    }
+    .cs1-wrapper-2 .slick-prev,
+    .cs1-wrapper-2 .slick-next {
+        display: none !important;
+    }
+    .cs1-wrapper-2 .hs2-wrapper-head a {
+        margin-left: 30px;
+    }
+    .mb-box {
+        padding: 12px 0 0;
+    }
+    .cs2-wrapper .img-box {
+        padding: 15px;
+    }
+    .cs2-wrapper .content-box {
+        padding: 5px 25px 15px;
+    }
+    .cs2-wrapper .price-box {
+        text-align: left;
+    }
+    .category-section2 {
+        padding: 30px 0;
+    }
+    .cs1-wrapper-1 .dp-toggle-menu {
+        width: 365px;
+        padding: 30px 20px 10px;
+        top: 65px;
+    }
+    .cs1-wrapper-1 .dp-toggle-menu li.dp-toggle-item a {
+        font-size: 12px;
+    }
+    /* for login/signup modal */
+    .modal .modal-content .modal-header h6 {
+        font-size: 20px;
+    }
+    .modal .modal-dialog {
+        max-width: 380px;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    .modal .modal-content .modal-body p {
+        text-align: center;
+    }
+    /* for courses page */
+    .tab-menu-wrapper .nav-item a.nav-link {
+        font-size: 11px;
+        margin-right: 6px;
+        margin-left: 8px;
+        padding: 6px;
+    }
+    .tab-menu-wrapper .nav-item a.nav-link.active::after {
+        width: 20px;
+        height: 30px;
+    }
+    .tab-menu-wrapper .nav-item a.nav-link.active::before {
+        width: 20px;
+        height: 30px;
+    }
+    .tab-menu-wrapper .nav-item a.nav-link.active::before {
+        left: -9px;
+    }
+    .css1-wt-wrapper {
+        position: absolute;
+        top: 28px;
+    }
+    .css1-wt-wrapper .css1-wt-wrapper-head a.btn.ws-btn {
+        color: #000;
+    }
+    .css2-wt-wrapper {
+        display: none;
+    }
+    .mb-video-box {
+        display: block;
+        margin-bottom: 20px;
+    }
+    .courses-section1 {
+        background-color: #003D7E;
+        padding: 30px 0 0;
+    }
+    .ft-mb-buying-box {
+        display: block;
+        background-color: #fff;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        z-index: 2;
+        left: 0;
+        padding: 15px 50px;
+    }
+    .ft-mb-buying-box h3 {
+        margin-right: 16px;
+        margin-top: 6px;
+    }
+    /* for buyed courses page */
+    .courses-section1 .span-box span {
+        font-size: 14px;
+    }
+    .css11-wt-wrapper {
+        top: 260px;
+        right: 0;
+    }
+    /* for courses-video page */
+    .courses-video-section1 .content-box {
+        margin-top: 20px;
+    }
+    /* for course video preview page */
+    .cvp-section {
+        display: block;
+    }
+    .cvp-left-wrapper {
+        width: 100%;
+        position: unset;
+        height: auto;
+    }
+    .cvp-right-wrapper {
+        width: 100%;
+    }
+    /* for profile page */
+    .profile-body .p-right-wrapper {
+        padding: 40px 20px 20px;
+        border-top: 1px solid #e5e5e5;
+    }
+    .profile-body .p-right-wrapper .tab-pane .app-now-btn {
+        width: 45%;
+    }
+    .profile-body .p-right-wrapper .tab-pane .photo-p-body {
+        width: 100%;
+    }
+    /* for public profile page */
+    .public-profile-section2 {
+        padding: 30px 0 0;
+    }
+    /* for footer pages */
+    .privacy-policy-section .pps-head-wrapper h4::before,
+    .privacy-policy-section .pps-head-wrapper h4::after {
+        width: 120px;
+    }
+    section.faq-section h4::before,
+    section.faq-section h4::after {
+        width: 0px;
+    }
+    section.faq-section .faq-body-wrapper {
+        width: 100%;
+    }
+    /* for course bundles page */
+    section.course-bundles-section .cb-body-wrapper .tab_menu {
+        width: 65%;
+    }
+    section.course-bundles-section .cb-body-wrapper .tab_content {
+        margin-top: 10px;
+    }
+    .course-plan-box.recommended {
+        margin-top: 35px;
+    }
+    /* for course view page */
+    .list-grid-box .pull-right {
+        display: none;
+    }
+    .filter-modal .modal .modal-dialog {
+        max-width: 260px;
+        margin: 0;
+        margin-left: auto;
+        margin-top: 0px;
+    }
+    /* for become an instructor page */
+    .bai-section {
+        padding: 30px 0;
+    }
+    .bai-section .bai-profile-body .img-box2 {
+        width: 240px;
+        height: 240px;
+        margin: 0 auto;
+    }
+    /* for company profile page */
+    .comp-profile-section4 .cps4-wrapper p br {
+        display: none;
+    }
+    .comp-profile-section4 .global-reach-box .inner-box {
+        width: 50%;
+    }
+    /* for blogs pages */
+    .blog-section1 {
+        height: 25vh;
+    }
+    section.blogs-section2 {
+        padding: 30px 0 20px;
+    }
+    .bs2-left-wrapper .blogs-slider .blog-slide1 {
+        display: block;
+    }
+    .bs2-left-wrapper .blogs-slider .blog-slide1 .img-box {
+        width: 100%;
+    }
+    .bs2-left-wrapper .blogs-slider .blog-slide1 .content-box {
+        width: 100%;
+        padding: 20px 15px;
+    }
+    .bs2-left-wrapper .blogs-box {
+        display: inline-block;
+    }
+    .bs2-left-wrapper .blogs-box .img-box {
+        width: 100%;
+    }
+    .bs2-left-wrapper .blogs-box .content-box {
+        width: 100%;
+        padding: 15px 20px;
+    }
+    section.single-blog-section {
+        padding: 30px 0;
+    }
+    .maintain-box {
+        width: 100%;
+    }
+    .maintain-box p br {
+        display: none;
+    }
+    /* for checkout page */
+    section.checkout-section2 .csk2-left-wrapper table.product-cart-table thead th {
+        width: 63%;
+    }
+    button.cancel-btn {
+        right: -35px;
+        top: -28px;
+    }
+    /* for payment page */
+    .order-detail-box .mt-2 {
+        margin-top: 10px !important;
+    }
+    section.payment-section1 {
+        padding: 30px 0;
+    }
+}
+
+
+/* 
+====================================================
+              Responsive css for 399px
+====================================================
+*/
+
+@media only screen and (max-width: 399px) {
+    /* home page */
+    section.home-section2 .hs2-wrapper-head a {
+        margin-left: 30px;
+    }
+    /* for category page */
+    .cs1-wrapper-1 .dp-toggle-menu {
+        width: 350px;
+    }
+    /* for login/signup modal */
+    button.google-btn {
+        padding: 10px 18px;
+    }
+    .modal .modal-content .modal-body {
+        padding: 1.5rem;
+    }
+    .modal .modal-dialog {
+        max-width: 350px;
+    }
+    /* for courses page */
+    .tab-menu-wrapper .nav-item a.nav-link {
+        font-size: 9px;
+    }
+    .ft-mb-buying-box {
+        padding: 15px 30px;
+    }
+    /* for buyed courses page */
+    .css11-wt-wrapper {
+        top: 285px;
+    }
+    /* for footer pages */
+    .privacy-policy-section .pps-head-wrapper h4::before,
+    .privacy-policy-section .pps-head-wrapper h4::after {
+        width: 100px;
+    }
+    /* for course bundles page */
+    section.course-bundles-section .cb-body-wrapper .tab_menu {
+        width: 72%;
+    }
+    /* for checkout page */
+    section.checkout-section2 .csk2-left-wrapper table.product-cart-table thead th {
+        width: 68%;
+    }
+}
+
+
+/* 
+====================================================
+              Responsive css for 321px
+====================================================
+*/
+
+@media only screen and (max-width: 399px) {
+    /* home page */
+    h3.h3-tittle {
+        font-size: 22px;
+    }
+    section.home-section2 .hs2-wrapper-head a {
+        margin-left: 0px;
+    }
+    /* for category page */
+    .cs1-wrapper-2 .hs2-wrapper-head a {
+        margin-left: 0;
+    }
+    .mb-box {
+        padding: 0px 0 0;
+    }
+    .cs1-wrapper-1 .dp-toggle-menu {
+        width: 290px;
+    }
+    .cs1-wrapper-1 .dp-toggle-menu li.dp-toggle-item a {
+        font-size: 9px;
+        opacity: 0.9;
+    }
+    .cs1-wrapper-1 .dp-toggle-menu li.dp-toggle-item {
+        margin-bottom: 0;
+    }
+    /* for courses page */
+    .tab-menu-wrapper .nav-item a.nav-link {
+        font-size: 8px;
+        margin-right: 5px;
+        margin-left: 6px;
+        padding: 6px 4px;
+    }
+    .ft-mb-buying-box {
+        padding: 15px 10px;
+    }
+    .ft-mb-buying-box h3 {
+        margin-right: 5px;
+    }
+    .profile-body .p-right-wrapper .tab-pane .app-now-btn {
+        width: 55%;
+    }
+    /* for footer pages */
+    .privacy-policy-section .pps-head-wrapper h4::before,
+    .privacy-policy-section .pps-head-wrapper h4::after {
+        width: 80px;
+    }
+    /* for course bundles page */
+    section.course-bundles-section .cb-body-wrapper .tab_menu {
+        width: 85%;
+    }
+}
