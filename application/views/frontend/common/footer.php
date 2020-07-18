@@ -536,7 +536,7 @@
                 }
                 else
                 {
-                    window.location.href=base_url+'profile-dashboard';
+                    window.location.href=base_url+'profile-setting';
                 }
             });
         });
