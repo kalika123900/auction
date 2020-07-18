@@ -4,7 +4,7 @@ class FrontendController extends CI_Controller{
     {
         parent::__construct();
         $this->load->model('CMModel');
-        $this->lang->load('fr','french');
+        $this->lang->load('en','english');
     }
    function index()
    {
@@ -248,6 +248,11 @@ class FrontendController extends CI_Controller{
     $this->load->view('frontend/common/header.php');
     $this->load->view('frontend/payment-process.php',$data);
     $this->load->view('frontend/common/footer.php');
+  }
+  public function product_landing($slug){
+    $product = $this->CMModel->joinedData('product_management',['product_images'=>'product_images.product_id = product_management.id'],"product_management.*,  GROUP_CONCAT(`product_images`.`image_name` SEPARATOR ',') as product_images, GROUP_CONCAT(`product_images`.`is_featured` SEPARATOR ',') as featured_state",["product_management.slug" => "$slug" ]);
+    echo '<pre>';
+    print_r($product); die();
   }
   public function pay_now(){
     

@@ -11,8 +11,9 @@ $lang['login']            = 'S\'identifier';
 $lang['call_us_now']      = 'Call Mon te';
 $lang['all_categories']   = 'toutes catégories';
 $lang['in_your_region']   =  'Dans votre région';
-$lang['last_minute']   =  'dernière minute';
-$lang['populars']   =  'Populaires';
-$lang['new']   =  'Nouveau';
+$lang['last_minute']      =  'dernière minute';
+$lang['populars']         =  'Populaires';
+$lang['new']              =  'Nouveau';
+$lang['prs_not_updated']  =  'Pas encore mis à jour';
 
 
