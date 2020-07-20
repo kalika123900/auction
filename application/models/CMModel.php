@@ -53,7 +53,7 @@ class CMModel extends CI_Model {
             return false;
         }
     }
-    public function joinedData($table,$join,$select,$where=false,$order_by=false){
+    public function joinedData($table,$join,$select,$where=false,$order_by=false,$group_by = false){
         $this->db->select($select);    
         $this->db->from($table);
         foreach($join as $key=>$value)
@@ -68,7 +68,12 @@ class CMModel extends CI_Model {
         {
             $this->db->order_by($order_by,'DESC');
         }
+        if($group_by!=false)
+        {
+            $this->db->group_by($group_by);
+        }
         $query = $this->db->get();
+      
      
         return $query->result();
     }

@@ -58,34 +58,25 @@ class CategoryMaster extends CI_Controller{
             $this->form_validation->set_rules('category_name','Category Name','required');
             $this->form_validation->set_rules('category_slug','Category Slug','required');
             $this->form_validation->set_rules('category_description','Category Description ','required');
+            $this->form_validation->set_rules('parent_id','Parent Category ','required');
             $this->form_validation->set_rules('category_id','Category Id', 'required');
             $this->form_validation->set_message('required', '<i class="fa fa-exclamation-triangle"></i> *The %s field is required!');
             $this->form_validation->set_message('alpha', '<i class="fa fa-exclamation-triangle"></i> *The %s field must be alphabets only!');
 
             if($this->form_validation->run())
             {   
-                $data['category_ject_name']        = $this->input->post('category_name');                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
-                $data['category_ject_slug']        = $this->input->post('category_slug');
-                $data['category_ject_description'] = $this->input->post('category_description');
-                $id                          = $this->input->post('category_id');
-               
-               
-                  if(!empty($_FILES['category_photo']['name'])){
-                    $config['upload_path'] = UPLOAD_PATH;
-                    $config['allowed_types'] = 'jpg|jpeg|png';
-                    $config['max_size'] = 2000000;
-                    $this->load->library('upload', $config);
-                    if ($this->upload->do_upload('category_photo')){
-                        $photodata = $this->upload->data();
-                        $data['category_ject_photo'] = $photodata['file_name'];                                                                                                                   
-                    }
-                }
+                $data['category_name']        = $this->input->post('category_name');                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+                $data['category_slug']        = $this->input->post('category_slug');
+                $data['category_description'] = $this->input->post('category_description');
+                $data['parent_id']            = $this->input->post('parent_id');
+                $id                           = $this->input->post('category_id');
+                
                 $result = $this->CMModel->updateOne('category_master',$data, ['id'=>$id]);
                 if($result)
                 {
                     $this->session->set_flashdata('success','Category updated successfully!');
                 }
-                redirect('admin/category_ject');   
+                redirect('admin/category');   
             } 
             else {
                 $dataHolder['validationError'] = validation_errors();           
@@ -108,13 +99,13 @@ class CategoryMaster extends CI_Controller{
         $this->load->view('category/update',$dataHolder);
         $this->load->view('common/footer');
      }
-    function delete($usid){
-        $response = $this->CMModel->deleteOne( 'category_master', ['id'=>$usid ] );
+    function delete($id){
+        $response = $this->CMModel->deleteOne( 'category_master', ['id'=>$id ] );
         if ( $response ) {
             $this->session->set_flashdata( 'success', 'Category deleted successfully!' );
         } else {
             $this->session->set_flashdata( 'success', 'Category could not be deleted successfully!' );
         }
-        redirect( 'admin/category' );
+        redirect('admin/category');
     }
 }
