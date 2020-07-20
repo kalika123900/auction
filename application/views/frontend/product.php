@@ -16,6 +16,7 @@
             </ul>
          </div>
       </div>
+
       <!-- row-1 end -->
    </div>
 </section>
@@ -93,13 +94,13 @@
                <div class="ps2-wrapper2">
                   <div class="row">
                      <div class="col-md-4 col-xs-4">
-                        <p class="para-desc">State: <span><?=ucfirst($product->product_condition)?></span></p>
+                        <p class="para-desc"><?=$this->lang->line('prds_state');?>: <span><?=ucfirst($product->product_condition)?></span></p>
                      </div>
                      <div class="col-md-4 col-xs-4">
-                        <p class="para-desc">Delivery: <span><?=ucfirst($product->product_deliverable==1?'Yes':'No')?></span></p>
+                        <p class="para-desc"><?=$this->lang->line('prds_delivery');?>: <span><?=ucfirst($product->product_deliverable==1?'Yes':'No')?></span></p>
                      </div>
                      <div class="col-md-4 col-xs-4">
-                        <p class="para-desc">Payment: <span><?php $product->product_payment_type; ?></span></p>
+                        <p class="para-desc"><?=$this->lang->line('prds_payment');?>: <span><?php $product->product_payment_type; ?></span></p>
                      </div>
                   </div>
                </div>
@@ -132,10 +133,10 @@
                <!-- row-3 end -->
                <!-- row-4 -->
                <div class="ps2-wrapper2">
-                  <h6 class="h6-tittle">Description</h6>
+                  <h6 class="h6-tittle"><?=$this->lang->line('prds_description');?></h6>
                   <hr>
                   <?=$product->product_description?>
-                  <button class="show-more-btn">Show Full Description</button>
+                  <button class="show-more-btn"><?=$this->lang->line('prds_show_full_description');?></button>
                </div>
                <!-- row-4 end -->
             </div>
@@ -185,8 +186,8 @@
                <?php endif; ?>
                <!-- Auction Handler Ends Here -->
                <?php if(isset($userdata['id']) && $userdata['id']!=$product->product_vendor_id){ ?>
-                  <button class="buy-now-btn buy-now" data-pro-id="<?=$product->id?>">Buy Now</button>
-                  <button class="add-wishlist-btn"><i class="far fa-heart"></i> Add to Wishlist</button>
+                  <button class="buy-now-btn buy-now" data-pro-id="<?=$product->id?>"><?=$this->lang->line('prds_buy_now ');?></button>
+                  <button class="add-wishlist-btn"><i class="far fa-heart"></i> <?=$this->lang->line('prds_add_to_wishlist ');?></button>
                <?php } 
                 else if(isset($userdata['id'])){ ?>
                   <!-- nothing to print-->
@@ -199,16 +200,16 @@
                <div class="ps2-wrapper2">
                   <div class="row">
                      <div class="col-md-6 col-xs-6">
-                        <p class="para-desc">Vendor</p>
-                        <p class="para-desc">Rating <i class="fas fa-info"></i></p>
-                        <p class="para-desc">User Type</p>
-                        <p class="para-desc">Item Sold</p>
-                        <p class="para-desc">Member Since</p>
-                        <p class="para-desc">Address</p>
+                        <p class="para-desc"><?=$this->lang->line('prds_vendor ');?></p>
+                        <p class="para-desc"><?=$this->lang->line('Prds_rating');?><i class="fas fa-info"></i></p>
+                        <p class="para-desc"><?=$this->lang->line('prds_user_type');?></p>
+                        <p class="para-desc"><?=$this->lang->line('Prds_Item_sold_');?></p>
+                        <p class="para-desc"><?=$this->lang->line('Prs_member_since');?></p>
+                        <p class="para-desc"><?=$this->lang->line('Prds_user_address');?></p>
                         <br>
-                        <p class="para-desc">User ID Number</p>
-                        <p class="para-desc">Number</p>
-                        <p class="para-desc">Address Verified</p>
+                        <p class="para-desc"><?=$this->lang->line('prds_user_id_number');?></p>
+                        <p class="para-desc"><?=$this->lang->line('prds_number');?></p>
+                        <p class="para-desc"><?=$this->lang->line('prds_address_verified');?></p>
                      </div>
                      <div class="col-md-6 col-xs-6 text-right">
                         <p class="para-desc"><span><?=$vendor->first_name." ".$vendor->last_name?></span></p>
@@ -284,7 +285,7 @@
                </div>
                <?php endif; ?>   
                <div class="text-center mt-2">
-                  <a href="#">Report This Ad</a>
+                  <a href="#"><?=$this->lang->line('prds_report_this_ad');?></a>
                </div>
 
             </div>

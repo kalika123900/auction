@@ -88,7 +88,21 @@ $lang['prds_buyer_ ']  ='Buyer 1';
 $lang['prds_vendeur ']  ='Vendeur';
 $lang['prds_n_d_article ']  ='N d article 1091329664';
 $lang['prds_alles_bestens ']  ='Alles Bestens Gerne Wieder';
-
+$lang['prds_add_to_wishlist ']  ='Add to Wishlist';
+$lang['prds_buy_now ']  ='Buy Now';
+$lang['prds_vendor ']  ='Vendor';
+$lang['prds_user_type']  ='User Type';
+$lang['prds_user_id_number']  ='User ID Number';
+$lang['prds_number']  ='Number';
+$lang['prds_address_verified']  ='Address Verified';
+$lang['prds_report_this_ad']  ='Report This Ad';
+$lang['prds_state']  ='State';
+$lang['prds_delivery']  ='Delivery';
+$lang['prds_payment']  ='Payment';
+$lang['prds_description']  ='Description';
+$lang['prds_hello_its_very_nice']  ='Hello its very nice shoes';
+$lang['prds_show_full_description']  ='SHOW FULL DESCRIPTION';
+$lang['prds_product_description'] = 'Hello its very nice shoes';
 
 
 
