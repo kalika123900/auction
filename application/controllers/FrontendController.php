@@ -4,7 +4,7 @@ class FrontendController extends CI_Controller{
     {
         parent::__construct();
         $this->load->model('CMModel');
-        $this->lang->load('fr','french');
+        $this->lang->load('en','english');
     }
    function index()
    {
@@ -248,6 +248,36 @@ class FrontendController extends CI_Controller{
     $this->load->view('frontend/common/header.php');
     $this->load->view('frontend/payment-process.php',$data);
     $this->load->view('frontend/common/footer.php');
+  }
+  public function product_landing($slug){
+    $slug = strtolower($slug);
+    $product = $this->CMModel->joinedData('product_management',['product_images'=>'product_images.product_id = product_management.id'],"product_management.*,  GROUP_CONCAT(`product_images`.`image_name` SEPARATOR ',') as product_images, GROUP_CONCAT(`product_images`.`is_featured` SEPARATOR ',') as featured_state",["product_management.product_slug" => "$slug"],false,['product_management.id']);
+    
+    if(count($product)<1)
+    {
+      redirect('404');
+    }
+    else
+    {
+      $userdata = $this->session->userdata();
+      if(isset($userdata['id'])){
+          $id = $userdata['id'];
+      }
+     
+      $data['userdata']       = $userdata;
+      $data['product']        = $product = current($product);
+      $bdQuery                = $this->db->query("SELECT a.category_name as category_name, a.category_slug as category_slug, b.category_name as parent_name, b.category_slug as parent_slug FROM category_master as a LEFT JOIN category_master as b ON b.id = a.parent_id WHERE a.id = '$product->product_category'");
+      $data['breadcrumb']     = $bdQuery->result();  
+      $data['vendor']         = current($this->CMModel->fetchData('user_master',['id'=>$product->product_vendor_id]));
+      $data['auctionItem']    = $this->CMModel->fetchData('auction_master',['product_id'=>$product->product_vendor_id]);
+      $data['productCount']   = current($this->CMModel->joinedData('user_master',['product_management'=>'product_management.product_vendor_id = user_master.id'],'count(product_management.id) as productCount',['user_master.id'=>$product->product_vendor_id]));
+     
+      $this->load->view('frontend/common/header.php',$data);
+      $this->load->view('frontend/product.php',$data);
+      $this->load->view('frontend/common/footer.php',$data);
+    
+    }
+
   }
   public function pay_now(){
     
@@ -707,9 +737,9 @@ class FrontendController extends CI_Controller{
     {   
       redirect('/');
     }
-    elseif(trim(($data[0]->first_name) && ($data[0]->last_name))=='')
+    elseif(trim($data[0]->first_name)=='' && trim($data[0]->last_name)=='')
     {
-      redirect('profile_dashboard');
+      redirect('profile-setting');
     }
   }
   public function profile_dashboard(){
@@ -729,8 +759,6 @@ class FrontendController extends CI_Controller{
     
     //print_r($data['userdata']);die;
     
-   
-
     $this->load->view('frontend/common/header.php',$data);
     $this->load->view('frontend/profile-dashboard.php',$data);
     $this->load->view('frontend/common/footer.php',$data);
@@ -750,6 +778,17 @@ class FrontendController extends CI_Controller{
 
   public function get_subcategory(){
     
+  }
+  public function inbox($purchase_id)
+  {
+    $userdata = $this->isLoggedIn();
+    $id=$userdata['id'];
+    $data['categories'] = $this->CMModel->fetchData('category_master',['parent_id'=>null]);
+    $data['userdata'] = $this->CMModel->fetchData('user_master',['id'=>$id]);
+    $data['location'] = getLocation();
+    $this->load->view('frontend/common/header.php',$data);
+    $this->load->view('frontend/inbox',$data);
+    $this->load->view('frontend/common/footer.php',$data);
   }
 
 }

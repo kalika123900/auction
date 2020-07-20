@@ -53,27 +53,28 @@ defined( 'BASEPATH' ) OR exit( 'No direct script access allowed' );
 $route['default_controller']                            =  'FrontendController';
 $route['subject/(:any)']                                =  'FrontendController/subject/$1';
 $route['courses']                                       =  'FrontendController/courses';
-$route['course/(:any)']                                 =  'FrontendController/course/$1';
-$route['payment-process']                               =  'FrontendController/payment_process';
-$route['payment/success']                               =  'FrontendController/payment_success';
-$route['payment/failure']                               =  'FrontendController/payment_failure';
-$route['payment/ipn']                                   =  'FrontendController/payment_ipn';
-$route['checkout']                                      =  'FrontendController/checkout/$1';
-$route['(:any)/checkout/add']                           =  'FrontendController/add/$1';
-$route['studying/(:any)']                               =  'FrontendController/study/$1';
-$route['(:any)/checkout/remove']                        =  'FrontendController/remove/$1';
+$route['product/(:any)']                                =  'FrontendController/product_landing/$1';
+// $route['payment-process']                            =  'FrontendController/payment_process';
+// $route['payment/success']                            =  'FrontendController/payment_success';
+// $route['payment/failure']                            =  'FrontendController/payment_failure';
+// $route['payment/ipn']                                =  'FrontendController/payment_ipn';
+//$route['checkout']                                    =  'FrontendController/checkout/$1';
+//$route['(:any)/checkout/add']                         =  'FrontendController/add/$1';
+//$route['studying/(:any)']                             =  'FrontendController/study/$1';
+//$route['(:any)/checkout/remove']                      =  'FrontendController/remove/$1';
 $route['profile']                                       =  'FrontendController/profile';
 $route['logout']                                        =  'FrontendController/logout';
 $route['privacy-policy']                                =  'FrontendController/privacy_policy';
 $route['pay-now']                                       =  'FrontendController/pay_now';
 $route['faq']                                           =  'FrontendController/faq';
-$route['approval-wait']                                 =  'FrontendController/approval_wait';
+//$route['approval-wait']                               =  'FrontendController/approval_wait';
 $route['search']                                        =  'FrontendController/search';
 $route['contact-us']                                    =  'FrontendController/contactus';
 $route['add-product']                                   =  'FrontendController/product_add';
 $route['profile-setting']                               =  'FrontendController/profile_setting';
 $route['profile-dashboard']                             =  'FrontendController/profile_dashboard';
 $route['profile-checked']                               =  'FrontendController/profile_checked';
+$route['messenger/(:any)']                              =  'FrontendController/inbox/$1';
 
 //for url for product
 

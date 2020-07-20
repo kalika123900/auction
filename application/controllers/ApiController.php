@@ -627,4 +627,40 @@ class ApiController extends CI_Controller{
       return $response;
     }  
   }
+  public function buy_product(){
+    $userdata = $this->session->userdata();
+    $response = [];
+    if(!isset($userdata['id']))
+    {
+      $response['status'] = 'failure';
+    }
+    $pro_id = $this->input->post('pro_id');
+    $product = $this->CMModel->fetchData('product_management',['id'=>$pro_id]);
+    $purchase = [];
+    $purchase['qty'] = 1;
+    $purchase['product_id'] = 1;
+    $purchase['qty'] = 1;
+    $purchase['customer_id'] = 1;
+    $purchase['vendor_id'] = 1;
+    $purchase['is_vendor_reviewed'] = 0;
+    $purchase['is_customer_reviewed'] = 0;
+    $purchase['purchase_date'] = date('Y-m-d h:i:s');
+    $purchase['status'] = 1;
+    $id = $this->CMModel->insertOne('purchase_master',$purchase);
+    if($id==false)
+    {
+      $response = [];
+      $response['status'] = 'fail';
+      $response['message']   = 'Sorry, this product can not be purchase';
+      $response['data']   = '';
+    }
+    else {
+      $response = [];
+      $response['status'] = 'success';
+      $response['message']   = 'Product purchased successfully!';
+      $response['data'] = ['purchase_id'=>$id];
+      $this->session->set_flashdata('Product purchased successfully!');
+    }
+    return $response;
+  }
 }

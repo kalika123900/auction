@@ -67,7 +67,8 @@ public function __construct()
    }
   
    function add()
-  { $dataHolder = [];
+  { 
+    $dataHolder = [];
     if($this->input->post('save')=='save'){
       $this->form_validation->set_rules('fname', 'First Name', 'required');
       $this->form_validation->set_rules('lname', 'Last Name', 'required');
