@@ -86,7 +86,7 @@
                                     <div class="col-md-6">
                                        <div class="form-group">
                                           <label for="l_name" id="l_name"><?=$this->lang->line('Prs_last_name');?>:</label>
-                                          <input type="text" class="form-control" value="<?=$user->last_name?>" name="lname" placeholder=<?=$this->lang->line('Prs_last_name');?> >
+                                          <input type="text" class="form-control" value="<?=$user->last_name?>" name="lname" placeholder="<?=$this->lang->line('Prs_last_name');?>">
                                        </div>
                                     </div>
 

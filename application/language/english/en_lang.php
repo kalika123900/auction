@@ -59,6 +59,44 @@ $lang['Prs_linkedin_profile_url']  ='Linkedin Profile URL';
 $lang['Prs_youtube_profile_url']  ='Youtube Profile URL';
 $lang['Prs_youtube_profile_url']  ='Youtube Profile URL';
 $lang['Prs_member_since']  ='Member Since';
+$lang['Prds_details']  ='Details';
+$lang['Prds_product']  ='Product';
+$lang['Prds_rating']  ='Rating';
+$lang['Prds_Item_sold_']  ='Iteam Sold';
+$lang['Prds_positive']  ='Positive';
+$lang['Prds_neutral']  ='Neutral';
+$lang['Prds_negative']  ='Negative';
+$lang['Prds_depuis_']  ='depuis';
+$lang['Prds_le_debut']  ='le debut';
+$lang['Prds_user_verification']  ='User Verification';
+$lang['Prds_user_id_number']  ='User ID Number or Ptent';
+$lang['Prds_user_phone_number']  ='Phone Number22222';
+$lang['Prds_user_address']  ='Address';
+$lang['Prds_verified']  ='Verified';
+$lang['Prds_films_waldhaus']  ='Flims Waldhaus, 7018 Flims, Near Redisson Hotel, MR-10, Indore, India';
+$lang['Prds_alexa_walker' ]  ='Alexa Walker';
+$lang['Prds_pro' ]  ='Pro';
+$lang['prds_edit_profile ']  ='Edit Profile';
+$lang['prds_seller ']  ='Seller';
+$lang['prds_buyer ']  ='Buyer';
+$lang['prds_heading_name ']  ='Heading Name';
+$lang['prds_product_conformity ']  ='Product Conformity';
+$lang['prds_communication ']  ='Communication';
+$lang['prds_delivery ']  = 'Delivery';
+$lang['prds_comments ']  ='Comments';
+$lang['prds_buyer_ ']  ='Buyer 1';
+$lang['prds_vendeur ']  ='Vendeur';
+$lang['prds_n_d_article ']  ='N d article 1091329664';
+$lang['prds_alles_bestens ']  ='Alles Bestens Gerne Wieder';
+
+
+
+
+
+
+
+
+
 
 
 
