@@ -163,14 +163,17 @@ function edit($id)
            
            
               if(!empty($_FILES['profilepicture']['name'])){
+                
                 $config['upload_path'] = UPLOAD_PATH;
                 $config['allowed_types'] = 'jpg|jpeg|png';
                 $config['max_size'] = 2000000;
-                $this->load->library('upload', $config);
+                $config['file_name'] =  time().'-'.$_FILES['profilepicture']['name'];
+                $this->upload->initialize($config);
                 if ($this->upload->do_upload('profilepicture')){
                     $photodata = $this->upload->data();
                     $data['profile_picture'] = $photodata['file_name'];                                                                                                                   
                 }
+               
             }
             $result = $this->CMModel->updateOne('user_master',$data, ['id'=>$id]);
             if($result)
@@ -214,6 +217,12 @@ function awaiting_companies(){
     $this->load->view('common/header.php');  
     $this->load->view('user/company-list',['result'=>$results]);       
     $this->load->view('common/footer');
+}
+function products(){
+  $products = $this->CMModel->joinedData('product_management pm',['product_images pi'=>'pi.product_id = pm.id AND pi.is_featured=1'],'pm.*,pi.image_name',false);
+  $this->load->view('common/header.php');  
+  $this->load->view('product-list',['result'=>$products]);       
+  $this->load->view('common/footer');
 }
 }
 ?>

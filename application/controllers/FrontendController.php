@@ -786,6 +786,33 @@ class FrontendController extends CI_Controller{
     $data['categories'] = $this->CMModel->fetchData('category_master',['parent_id'=>null]);
     $data['userdata'] = $this->CMModel->fetchData('user_master',['id'=>$id]);
     $data['location'] = getLocation();
+    $purchase_query = $this->db->query("SELECT `pm`.*, `pm2`.`product_name`, `pm2`.`product_slug`,pm2.product_price as price,pi.image_name,pi.is_featured FROM `purchase_master` `pm` LEFT JOIN `product_management` `pm2` ON `pm2`.`id` = `pm`.`product_id` LEFT JOIN `product_images` `pi` ON `pi`.`product_id` = `pm2`.`id` AND pi.is_featured=1 WHERE `pm`.`id` = '$purchase_id'");
+    $purchase_details = $purchase_query->result();
+    $purchase = current($purchase_details);
+    $data['purchase'] =  $purchase;
+    if($purchase->customer_id!=$id && $purchase->vendor_id!=$id)
+    {
+      redirect('404');
+    }
+    else
+    {
+     if($purchase->customer_id==$id){
+        $data['trans_role'] = 'customer';
+        //$vendor_details = $this->CMModel->joinedData('user_master um',['user_details ud'=>'ud.user_id = um.id'],'um.*, ud.*',['um.id'=>$purchase->vendor_id]);
+       
+      }
+     else
+     {
+        $data['trans_role'] = 'vendor';
+        //$vendor_details = $this->CMModel->joinedData('user_master um',['user_details ud'=>'ud.user_id = um.id'],'um.*, ud.*',['um.id'=>$id]);
+       
+     }
+    }
+    $vendor_details = $this->CMModel->fetchData('user_master',['id'=>$purchase->vendor_id]);
+    $data['friend'] =  current($vendor_details);
+    
+    $timeLapse = (strtotime($purchase->purchase_date)+1209600)-time();
+    $data['dayLapse'] = round($timeLapse/86400); 
     $this->load->view('frontend/common/header.php',$data);
     $this->load->view('frontend/inbox',$data);
     $this->load->view('frontend/common/footer.php',$data);

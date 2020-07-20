@@ -85,7 +85,6 @@ $route['admin/logout']                                  =  'AdminController/logo
 $route['admin/user/add']                                =  'AdminController/add';
 $route['admin/user/edit/(:num)']                        =  'AdminController/edit/$1';
 $route['admin/user']                                    =  'AdminController/list';
-$route['admin/user/new-companies']                      =  'AdminController/awaiting_companies';
 
 $route['admin/category']                                =  'CategoryMaster';
 $route['admin/category/add']                            =  'CategoryMaster/add';
@@ -96,6 +95,8 @@ $route['admin/course/questions/(:num)']                 =  'QuestionController/i
 $route['admin/course/questions/add/(:num)']             =  'QuestionController/add/$1';
 $route['admin/course/questions/edit/(:num)']            =  'QuestionController/edit/$1';
 $route['admin/course/questions/delete/(:num)']          =  'QuestionController/delete/$1';
+
+$route['admin/products']                                =  'AdminController/products';
 
 $route['admin/course/delete/(:num)']                    =  'CourseMaster/deletecourse/$1';
 $route['admin/course/edit/(:num)']                      =  'CourseMaster/updatecourse/$1';

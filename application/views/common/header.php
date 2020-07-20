@@ -120,6 +120,12 @@
                       <li><a href="<?=site_url('/admin/coupons')?>"> Coupons List</a></li>
                     </ul>
                   </li>
+                   <li class="<?=$nav==4?'active':''?>"><a><i class="fa fa-table"></i> Products <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="<?=site_url('/admin/products')?>"> All Products</a></li>
+                      <li><a href="<?=site_url('/admin/auctions')?>"> Current Auctions</a></li>
+                    </ul>
+                  </li>
                  
                   <li class="<?=$nav==5?'active':''?>"><a><i class="fa fa-users"></i>Users <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu" style="<?=$open==3?'display : block':''?>">

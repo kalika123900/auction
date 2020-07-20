@@ -73,8 +73,7 @@ class CMModel extends CI_Model {
             $this->db->group_by($group_by);
         }
         $query = $this->db->get();
-      
-     
+    
         return $query->result();
     }
     public function insertOrUpdate($table,$data)

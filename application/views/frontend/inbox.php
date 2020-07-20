@@ -153,11 +153,11 @@
                         <div class="col-md-7 col-xs-7">
                            <div class="profile-wrapper">
                               <div class="img-box">
-                               <img src="img/profile-img.png" alt="">
+                               <img src="<?=UPLOADS.$friend->profile_picture?>" alt="">
                               </div>
                               <div class="content-box">
-                                 <h6 class="h6-tittle">Alexa Walker</h6>
-                                 <p class="para-desc">Last seen on Mar 20 at 07:55</p>
+                                 <h6 class="h6-tittle"><?=$friend->first_name." ".$friend->last_name?></h6>
+                                 <p class="para-desc">Purchased on <?=date('d M, Y h:i',strtotime($purchase->purchase_date))?></p>
                               </div>
                            </div>
                         </div>
@@ -192,7 +192,7 @@
                                     <p class="para-desc">Contact Informations</p>
                                  </div>
                                  <div class="col-md-5">
-                                    <p class="para-desc"><i class="fas fa-phone-alt"></i> 22898956</p>
+                                    <p class="para-desc"><i class="fas fa-phone-alt"></i> <?=$friend->phone_number?></p>
                                  </div>
                               </div>
                            </div>
@@ -206,19 +206,19 @@
                         <div class="row">
                            <div class="col-lg-2 col-md-3 col-xs-3">
                               <div class="img-box1">
-                                 <img src="img/camera2.png" alt="">
+                                 <img src="<?=UPLOADS.$purchase->image_name?>" alt="">
                               </div>
                            </div>
                            <div class="col-lg-6 col-md-6 col-xs-6">
-                              <p class="para-desc">Apple MacBook Air Brand New Condition</p>
+                              <p class="para-desc"><?=$purchase->product_name?></p>
                               <div class="sub-inner-box">
-                                 <button class="dt-btn">100 Dt</button>
-                                 <p class="para-desc"><span>Qunatity 1</span></p>
+                                 <button class="dt-btn"><?=$purchase->price?> USD</button>
+                                 <p class="para-desc"><span>Qunatity <?=$purchase->qty?></span></p>
                               </div>
                            </div>
                            <div class="col-lg-4 col-md-3 col-xs-3">
                               <div class="days-box">
-                                 <h6 class="h6-tittle">7 days left</h6>
+                                 <h6 class="h6-tittle"><?=$dayLapse?> days left</h6>
                               </div>
                            </div>
                         </div>
